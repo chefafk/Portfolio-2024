@@ -61,6 +61,19 @@ h1 {
     padding:13rem 8rem 0 8rem;
 }
 
+.heroh3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Open Sans" sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    color: orange;
+    margin-right: 58%;
+    padding-bottom: 23%;
+}
+
 .about {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
