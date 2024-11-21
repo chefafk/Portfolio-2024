@@ -43,29 +43,29 @@ body {
 
 .navbar a:hover {
     background-color: rgb(244, 246, 255, .5);
-    color:white;
+    color: white;
     font-size: 24px;
 }
 
 h1 {
-    display:flex;
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     align-items: center;
     font-size: 7rem;
     font-family: "Libre Baskerville", serif;
     font-weight: 700;
     font-style: normal;
-    color:white;
+    color: white;
     margin-top: 2%;
     margin-right: 30%;
-    padding:13rem 8rem 0 8rem;
+    padding: 13rem 8rem 0 8rem;
 }
 
 .heroh3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Open Sans" sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
@@ -85,8 +85,8 @@ h1 {
     padding-bottom: 5rem;
 }
 
-.about>h2 {
-    font: "Libre Baskerville", serif;
+.about > h2 {
+    font-family: "Libre Baskerville", serif;
     font-weight: 400;
     display: flex;
     justify-content: center;
@@ -94,8 +94,8 @@ h1 {
     color: black;
 }
 
-.about>p {
-    font-family: "Old Standard TT" serif;
+.about > p {
+    font-family: "Old Standard TT", serif;
     font-style: normal;
     padding-left: 11rem;
     width: 600px;
@@ -104,47 +104,44 @@ h1 {
     margin-left: 3rem;
 }
 
-.about>img{    
+.about > img {
     grid-row-start: span 2;
     width: 250px;
- 
 }
 
 .showcase {
     background-color: #1A1A19;
     background-size: 100%;
-    
 }
 
-.showcase>h2{
+.showcase > h2 {
     color: white;
-    display:flex;
+    display: flex;
     justify-content: center;
     font-size: 5rem;
-    padding:5rem 0 2rem 0;
+    padding: 5rem 0 2rem 0;
 }
 
-.work{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
+.work {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.work img{
+.work img {
     width: 300px;
-    height: 180px;;
+    height: 180px;
     padding: 0.5rem;
-   
 }
 
-.work-item{
-    display:flex;
+.work-item {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 1.5rem;
 }
 
-.work h3{
+.work h3 {
     color: white;
     margin-bottom: 1rem;
     font-size: 1.5rem;
@@ -153,47 +150,114 @@ h1 {
     text-decoration: underline;
 }
 
-.work p{
-    font-family:  "Old Standard TT" serif;
+.work p {
+    font-family: "Old Standard TT", serif;
     color: white;
     font-style: inherit;
     font-size: 20px;
     width: 350px;
     letter-spacing: 1.5px;
     padding-left: 1.2rem;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
     padding-bottom: 5rem;
 }
 
- .contact {
+.contact {
     background-color: #697565;
     background-size: 100%;
- }
+}
 
- .contact h2 {
+.contact h2 {
     display: flex;
     justify-content: left;
     color: white;
     font-size: 5rem;
     padding: 2rem 0 0 8rem;
- }
+}
 
- .contact p {
-    padding:0.5rem 0 3rem 10rem;
-        color:white;
-        font-size: 2rem;
-        font-family: 'Old Standard TT', serif;
-        font-weight: 400;
-        letter-spacing: .2rem;
- }
+.contact p {
+    padding: 0.5rem 0 3rem 10rem;
+    color: white;
+    font-size: 2rem;
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+}
 
- footer{
-    padding:0.5rem 0 0.5rem 0;
-    display:flex;
+footer {
+    padding: 0.5rem 0 0.5rem 0;
+    display: flex;
     justify-content: center;
     background-color: beige;
-    color:black;
+    color: black;
     font-size: 1rem;
-    font: "Libre Baskerville", serif;
+    font-family: "Libre Baskerville", serif;
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 4rem;
+        margin-right: 0;
+        padding: 5rem 2rem 0 2rem;
+    }
+
+    .heroh3 {
+        font-size: 20px;
+        margin-right: 0;
+        padding-bottom: 10%;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .about > h2 {
+        font-size: 5rem;
+    }
+
+    .about > p {
+        padding-left: 1rem;
+        width: 90%;
+        margin-left: 1rem;
+        font-size: 16px;
+    }
+
+    .about > img {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .showcase > h2 {
+        font-size: 3rem;
+        padding: 3rem 0 1rem 0;
+    }
+
+    .work {
+        grid-template-columns: 1fr;
+    }
+
+    .work img {
+        width: 100%;
+        height: auto;
+    }
+
+    .work p {
+        width: 90%;
+        padding-left: 1rem;
+        font-size: 16px;
+    }
+
+    .contact h2 {
+        font-size: 3rem;
+        padding: 1rem 0 0 2rem;
+    }
+
+    .contact p {
+        padding: 0.5rem 0 2rem 2rem;
+        font-size: 1.5rem;
+    }
 }
